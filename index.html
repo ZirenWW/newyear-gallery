@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-
-    <title>3D Art Gallery</title>
-
+    <title>星空画廊</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -13,79 +11,83 @@
       <div id="img_container">
         <div id="starry_night_bg"></div>
       </div>
+
       <div id="content_container">
         <div id="content">
           <div class="title">
-            <h1>3D Art Gallery</h1>
+            <h1>星空画廊</h1>
           </div>
+
           <div class="title-info">
-            <p>Welcome to an immersive 3D Art Gallery experience.</p>
-            <p>
-              Wander through the virtual gallery halls, and engage with a
-              variety of masterpieces, learning about their history and
-              significance.
+            <p>欢迎来到我们的虚拟画廊。</p>
             </p>
             <p>
-              Developed by Emilian Kasemi with a passion for bringing art to
-              life through technology.
+              这是我用一点点技术，<br />
+              和很多很多的心意，<br />
+              为我们搭起的一个小小画廊。
             </p>
           </div>
 
           <div id="play_button">
-            <p>EXPLORE ART</p>
+            <p>进入画廊</p>
           </div>
+
           <div id="about_button_container">
-            <button id="about_button">ABOUT</button>
+            <button id="about_button">关于这个画廊</button>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- About 弹窗 -->
     <div id="about-overlay">
       <button id="close-about">X</button>
-      <h1>About the 3D Art Gallery</h1>
+
+      <h1>关于这个画廊</h1>
+
       <p>
-        Welcome to our virtual 3D Art Gallery. Here, you can navigate through a
-        variety of wonderful artworks and learn about their history and
-        significance.
+        这是一个不大的 3D 画廊。<br />
+        我想把一些画、一些瞬间、一些记忆，<br />
+        用一种特别的方式留在这里。
       </p>
+
       <p>
-        This project is brought to you by Emilian Kasemi. We believe in the
-        power of art to inspire, provoke thought, and communicate across
-        cultures and epochs. Our mission is to make art accessible to everyone,
-        regardless of location or background.
+        你可以慢慢走、慢慢看。<br />
+        不需要着急，也没有正确路线。
       </p>
+
       <p>
-        Feel free to explore and engage with the artworks. The gallery is best
-        experienced in full-screen mode. For optimal navigation, use the arrow
-        keys or the W, A, S, and D keys. You can also use your mouse to change
-        the viewing direction. Additional information about the artworks will
-        appear on your screen as you approach them.
+        如果你愿意，就把它当成一次小小的散步。<br />
+        如果你开心，那它就完成使命了。
       </p>
     </div>
 
+    <!-- 操作说明 -->
     <div id="info-panel">
       <div id="info-header">
-        <h3>Controls</h3>
-        <button id="toggle-info">Hide</button>
+        <h3>操作说明</h3>
+        <button id="toggle-info">隐藏</button>
       </div>
+
       <div id="info-content">
-        <p><b>W/A/S/D:</b> Move around</p>
-        <p><b>Mouse:</b> Look around</p>
-        <p><b>Space:</b> Toggle pointer lock</p>
-        <p><b>M:</b> Show Menu</p>
-        <p><b>Enter:</b> Start exploration</p>
-        <p><b>Esc:</b> Stop exploration</p>
-        <p><b>G:</b> Start audio guide</p>
-        <p><b>P:</b> Stop audio guide</p>
+        <p><b>W / A / S / D：</b> 行走</p>
+        <p><b>鼠标：</b> 转动视角</p>
+        <p><b>空格：</b> 锁定 / 解锁鼠标</p>
+        <p><b>M：</b> 打开菜单</p>
+        <p><b>Enter：</b> 开始探索</p>
+        <p><b>Esc：</b> 退出探索</p>
+        <p><b>G：</b> 开始语音导览</p>
+        <p><b>P：</b> 停止语音导览</p>
       </div>
     </div>
 
+    <!-- 音频控制 -->
     <div id="audio_controls">
-      <button id="start_audio">Start Audio Guide</button>
-      <button id="stop_audio">Stop Audio Guide</button>
+      <button id="start_audio">开始语音导览</button>
+      <button id="stop_audio">停止语音导览</button>
     </div>
 
+    <!-- 画作信息 -->
     <div id="painting-info"></div>
 
     <script type="module" src="/main.js"></script>
